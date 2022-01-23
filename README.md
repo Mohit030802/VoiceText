@@ -1,4 +1,4 @@
-# JustSpeak 🔊
+# VoiceText 🔊
 
 ## Technologies or Languages Used -
 - HTML5
