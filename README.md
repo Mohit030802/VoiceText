@@ -18,7 +18,7 @@ let x = "Hello World, ";
 console.log( x + "Welcome to this Devops project");
 ```                                         
 
-## Why I build this?
+## Why We build this?
 This is a web application built using speech-recognition and various technologies to solve a real world problem that I encountered.
 > **Problems that this app solves:**
 > - If someone is not having laptop or PC, then he/she can do assignments easily with this application.
