@@ -1,0 +1,25 @@
+name: Datree CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install DaTree  
+        run: curl https://get.datree.io | /bin/bash
+
+      - name: Test with DaTree
+        run: datree test ./*.yaml --ignore-missing-schemas
+        env: 
+          DATREE_TOKEN: ${{ secrets.DATREE_TOKEN }}
+

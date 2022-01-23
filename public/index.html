@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/styles.css">
+    <!-- CSS only -->
+    <title>JustSpeak🔊</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="first">
+            <p>VoiceText</p>
+        </div>
+        <!-- only for mobile view -->
+        <div class="topnav">
+            <div id="myLinks">
+              <a href="#home">Home</a>
+              <a href="#contact">Contact</a>
+              <a href="#uttam">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <!-- mobile viiew ends -->
+        <div class="second">
+            <a href="#home"><p>Home</p></a>
+            <a href="#uttam"><p>About</p></a>
+            <a href="#contact"><p>Contact</p></a>
+        </div>
+    </div>
+    <div id="home" class="header">
+        <div class="logo">
+            <h1> VoiceText.com 🔊</h1>
+            <h6>One stop solution for all transcript works!</h6>
+        </div>
+        <div class="gif">
+            <img src="./assets/speechReco.png" alt="gif">
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e74c3c" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,245.3C384,256,480,192,576,186.7C672,181,768,235,864,213.3C960,192,1056,96,1152,85.3C1248,75,1344,149,1392,186.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="container">
+        <!-- first section for - title -->
+        <h4 id="title">Title</h4>
+        <input id="inputTitle" type="text" placeholder="Enter your Title here">
+        <button id="inputTitleBtn" onclick="setTitle();"> <img src="assets/setTitle.png" alt=""></button> </button>
+        
+        <!-- second section for - textarea -->   
+        <div class="language_menu">
+            <h4 >Select Voice <span class="select_optional">(Optional)</span></h4>
+            <div>
+              <select></select>
+            </div>
+        </div> 
+        <div class="audio_to_text">
+                <textarea id="text_area" rows="30" cols="30" placeholder="All text will go here when you'll speak"></textarea>
+            </div>
+            <div class="items">
+                <button class="start"><img src="assets/speak.png"/></button>
+                <button id="stop"><img src="assets/stop.png"/></button>
+                <button id = "lsn" class="listen"><img src="assets/listen.png"></button>
+                <button class="reset"><img src="assets/reset.png"></button>
+                <button id="dwn" class="download"><img src="assets/download.png"></button>
+            </div>
+    </div>
+    <!-- third section for - email -->    
+    <svg class="svg_class" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e74c3c" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,245.3C384,256,480,192,576,186.7C672,181,768,235,864,213.3C960,192,1056,96,1152,85.3C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="email_notes">
+        <h2>Sending transcript to your any mail became easy with JustSpeak🔊</h2>
+        <form action="/" method="post">
+            <input type="email"  id="usermail" name="email" placeholder="Enter your email here">
+            <button id="save"><img src="assets/save.png"></button>
+            <button id="send" type="submit" disabled><img src="assets/sendmail.png"></button>
+        </form>
+        <p class="instruct">*You have to save the transcript first then you can send it to your email.</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e74c3c" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,245.3C384,256,480,192,576,186.7C672,181,768,235,864,213.3C960,192,1056,96,1152,85.3C1248,75,1344,149,1392,186.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div id="uttam">
+        <div class="madeby">
+            <h2>Made <span>By</span></h2>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="assets/me.png" alt="">
+            <div class="content">
+                <h3>TechSquad</h3>
+                <br> <br>
+                <h3>Links to connect:</h3>
+                <a href="https://github.com/Tech-Squad-2021"><img src="assets/connect-github.png" alt="github"> </a>
+                
+                <a href="https://www.linkedin.com/company/tech-squad2084/"><img src="assets/connect-linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        <h2>Please do give a rating!</h2>
+        <div class="rating_parent">
+            <div class="rating">
+                <input type="radio" name="star" id="star1" checked>
+                <label for="star1">
+                    <img src="./assets/surprised.png" width="100" alt="surprised">
+                    <h4>Surprised</h4>
+                </label>
+                <input type="radio" name="star" id="star2" >
+                <label for="star2">
+                    <img src="./assets/awesome.png" width="100" alt="awesome">
+                    <h4>Awesome</h4>
+                </label>
+                <input type="radio" name="star" id="star3" >
+                <label for="star3">
+                    <img src="./assets/cool.png" width="100" alt="cool">
+                    <h4>Cool</h4>
+                </label>
+                <input type="radio" name="star" id="star4" >
+                <label for="star4">
+                    <img src="./assets/bad.png" width="100" alt="bad">
+                    <h4>Bad</h4>
+                </label>
+            </div>
+        </div>  
+    </div>
+    <svg class="svg_class" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e74c3c" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,245.3C384,256,480,192,576,186.7C672,181,768,235,864,213.3C960,192,1056,96,1152,85.3C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="alan-btn"></div>
+    <footer id="contact">
+        <p>Made with ❤️ in India</p>
+        <p>copyright © 2022 all rights reserved</p>
+    </footer>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "890a3aafaf07bb1d69d063c914f5c6dc2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "download") {
+        document.getElementById('dwn').click();
+      }
+      if(commandData.command === "send"){
+        document.getElementById('save').click();
+        document.getElementById('send').click();
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+  
+</script>
+</html>
