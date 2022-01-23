@@ -46,11 +46,11 @@ After downloading this project in **ZIP format** or **cloning** using GitHub CLI
 > Now we have came to end of the setup and we have to run `npm start` this will spin the server and **You will be redirected to Your Browser at `localhost:3000` where the Website is being hosted**.
 
 ### Need Assistance for running this App on your Localhost using Docker🐳? 
-> First you have to pull the image from my **Docker Hub** <a href="https://hub.docker.com/repository/docker/codingnightmare/just-speak">registry</a>. 
+> First you have to pull the image from my **Docker Hub** <a href="https://hub.docker.com/repository/docker/subhro2084/voicetext">registry</a>. 
 > Then do the same steps as you do to run docker image.
 If you want to run it in one line code then here we go, just copy paste this code 
 ```
-docker run -d -p 3000:3000 codingnightmare/just-speak:v1
+docker run -d -p 3000:3000 subhro2084/voicetext
 ```
 Then it'll be deployed into your local host port 3000.
 > 
